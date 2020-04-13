@@ -35,7 +35,7 @@ npm install jquery-delay-text --save
 ### CDN ###
 
 ```
-<script src=""></script>
+<script src="https://cdn.jsdelivr.net/gh/jrquick17/jquery-delay-text/delay-text.js"></script>
 ```
 
 ## Documentation ##
