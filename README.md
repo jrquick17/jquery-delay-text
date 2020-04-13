@@ -18,7 +18,7 @@
 
 ## About ## 
 
-A light weight Angular 2+ service for checking internet speed  
+A jQuery function for making text appear with more spazaz. 
 
 * Try out [the demo](https://jquery-delay-text.jrquick.com) to see it in action!
 * Visit [my website](https://jrquick.com) for other cool projects!
