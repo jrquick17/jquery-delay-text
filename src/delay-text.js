@@ -1,0 +1,40 @@
+jQuery.fn.delayText = function(options) {
+  options = typeof options === 'undefined' ? {} : options;
+
+  $(this).get().forEach(
+    function(element) {
+      var text = element.innerText;
+      var textLength = text.length;
+
+      element.innerHTML = '';
+
+      for (var i = 0; i < textLength; i++) {
+        var span = document.createElement('span');
+        span.innerText = text.charAt(i);
+
+        $(span).css('color', 'white');
+
+        element.append(span);
+
+        options.time = typeof options.time === 'undefined' ? 1000 : options.time;
+        options.sequential = typeof options.sequential === 'undefined' ? false : options.sequential;
+
+        var wait;
+        if (options.sequential) {
+          wait = i / textLength * options.time;
+        } else {
+          wait = Math.random() * options.time;
+        }
+
+        setTimeout(
+          function(i, element) {
+            $(element.children[i]).css('color', 'inherit');
+          },
+          wait,
+          i,
+          element
+        );
+      }
+    }
+  );
+};
