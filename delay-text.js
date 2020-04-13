@@ -1,7 +1,9 @@
+jQuery = typeof jQuery === 'undefined' ? $ : jQuery;
+
 jQuery.fn.delayText = function(options) {
   options = typeof options === 'undefined' ? {} : options;
 
-  $(this).get().forEach(
+  jQuery(this).get().forEach(
     function(element) {
       var text = element.innerText;
       var textLength = text.length;
@@ -12,7 +14,7 @@ jQuery.fn.delayText = function(options) {
         var span = document.createElement('span');
         span.innerText = text.charAt(i);
 
-        $(span).css('color', 'white');
+        jQuery(span).css('color', 'white');
 
         element.append(span);
 
@@ -28,7 +30,7 @@ jQuery.fn.delayText = function(options) {
 
         setTimeout(
           function(i, element) {
-            $(element.children[i]).css('color', 'inherit');
+            jQuery(element.children[i]).css('color', 'inherit');
           },
           wait,
           i,
