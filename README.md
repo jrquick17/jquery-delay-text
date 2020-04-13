@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/l/jquery-delay-text.svg)](https://www.npmjs.com/package/jquery-delay-text/)
 [![npm](https://img.shields.io/npm/dt/jquery-delay-text.svg)](https://www.npmjs.com/package/jquery-delay-text)
 [![npm](https://img.shields.io/npm/dm/jquery-delay-text.svg)](https://www.npmjs.com/package/jquery-delay-text)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/gh/jrquick17/jquery-delay-text/badge)](https://www.jsdelivr.com/package/gh/jrquick17/jquery-delay-text)
 
 ![](example.gif)
 
