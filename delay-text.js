@@ -14,7 +14,7 @@ jQuery.fn.delayText = function(options) {
         var span = document.createElement('span');
         span.innerText = text.charAt(i);
 
-        jQuery(span).css('color', 'white');
+        jQuery(span).css('opacity', '0');
 
         element.append(span);
 
@@ -30,7 +30,7 @@ jQuery.fn.delayText = function(options) {
 
         setTimeout(
           function(i, element) {
-            jQuery(element.children[i]).css('color', 'inherit');
+            jQuery(element.children[i]).css('opacity', '1');
           },
           wait,
           i,
